@@ -1,10 +1,11 @@
 import React from 'react';
+import { MyButtonContainer } from './styles';
 
-const MyButton = ({ btnLabel }) => {
+const MyButton = ({ btnLabel, btnHref }) => {
   return (
-    <div>
-
-    </div>
+    <MyButtonContainer content={btnLabel}>
+      <a href={btnHref}></a>
+    </MyButtonContainer>
   );
 };
 
