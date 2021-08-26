@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HomepageContainer = styled.div`
+export const SectionContainer = styled.div`
   max-width: 1920px;
   margin: 0 auto;
   padding: 50px 100px;
@@ -8,21 +8,11 @@ export const HomepageContainer = styled.div`
   flex: row;
 `;
 
-export const AboutpageContainer = styled.div`
+export const SectionAltContainer = styled.div`
   max-width: 1920px;
   margin: 0 auto;
   padding: 50px 100px;
-  display: flex;
-  flex: row;
 `;
-
-export const SkillspageContainer = styled.div`
-  max-width: 1920px;
-  margin: 0 auto;
-  padding: 50px 100px;
-  display: flex;
-  flex: row;
-`
 
 export const LeftContainer = styled.div`
   width: 50%;
@@ -63,34 +53,6 @@ export const H2 = styled.h2`
   padding: 10px 0px;
 `;
 
-export const H3 = styled.h3`
-  font-size: 2rem;
-`;
-
-export const PageTitle = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  /* background-color: red; */
-  h2 {
-    color: var(--orange-title);
-    text-shadow: 2px 2px 2px var(--black);
-  }
-`;
-
-export const HrTitleLine = styled.hr`
-  width: 75px;
-  border: 1px solid var(--orange-title);
-`;
-
-export const PageSubtitle = styled.h1`
-  font-size: 2.6rem;
-  letter-spacing: 1px;
-  color: var(--white);
-  font-weight: bold;
-  text-shadow: 2px 2px 2px var(--black);
-`;
-
 export const PageContent = styled.p`
   font-size: 1.1rem;
   font-weight: 400;
@@ -102,7 +64,10 @@ export const PageContent = styled.p`
 `;
 
 export const ImageContainer = styled.div`
-  max-width: 500px;
+  max-width: 800px;
+  width: 40vw;
+  display: flex;
+  justify-content: right;
 `;
 
 export const ButtonsContainer = styled.div`
@@ -110,4 +75,20 @@ export const ButtonsContainer = styled.div`
   flex-direction: row;
   justify-content: space-between;
   width: 450px;
+  padding: 15px 0px;
+`;
+
+export const IconsContainer = styled.div`
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
+  color: var(--white);
+  * {
+    margin-right: 20px;
+    transition: all .2s;
+  }
+  & *:hover {
+    color: var(--orange-title);
+  }
 `;

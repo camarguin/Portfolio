@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { AiOutlineArrowDown } from 'react-icons/ai'
 import FloatingComponent from 'react-floating-component';
 import homeIllustrationImg from '../../public/assets/homeIllustration.png';
-import { HomepageContainer, LeftContainer, RightContainer, H1, H2 } from './styles';
+import { SectionContainer, LeftContainer, RightContainer, H1, H2 } from './styles';
 import MouseScroll from '../MouseScroll/MouseScroll';
 import htmlIcon from '../../public/assets/htmlIcon.png';
 import cssIcon from '../../public/assets/cssIcon.png';
@@ -12,7 +12,7 @@ import codeIcon from '../../public/assets/codeIcon.png';
 
 const Homepage = () => {
   return (
-    <HomepageContainer >
+    <SectionContainer >
       <LeftContainer>
         <H1>Feel the power of a well crafted website</H1>
         <H2><AiOutlineArrowDown />&nbsp;Meet Lucas</H2>
@@ -35,7 +35,7 @@ const Homepage = () => {
         <Image src={homeIllustrationImg} alt="illustration" width="400px" height="400px" />
       </RightContainer>
       {/* <MouseScroll /> */}
-    </HomepageContainer>
+    </SectionContainer>
   );
 };
 

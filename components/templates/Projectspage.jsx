@@ -1,15 +1,16 @@
 import React from 'react';
 import PageTitles from '../PageTitles/PageTitles';
-import Skills from '../Skills/Skills';
+import Projects from '../Projects/Projects';
 import { SectionAltContainer } from './styles';
 
-const Skillspage = () => {
+const Projectspage = () => {
   return (
     <SectionAltContainer>
-      <PageTitles pageTitle1="SKILLS" pageTitle2="My Competencies" />
-      <Skills />
+      <PageTitles pageTitle1="PROJECTS" pageTitle2="My Projects" />
+      <Projects />
+
     </SectionAltContainer>
   );
 };
 
-export default Skillspage;
+export default Projectspage;

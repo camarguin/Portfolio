@@ -3,6 +3,7 @@ import { createGlobalStyle } from 'styled-components'
 export const GlobalStyle = createGlobalStyle`
   :root {
     --orange-title: #E27D60;
+    --orange-dark: #44251d;
     --white: #ffffff;
     --black: #000000;
     /*

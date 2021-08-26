@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 import Homepage from './templates/Homepage';
-import MouseScroll from './MouseScroll/MouseScroll';
 import Aboutpage from './templates/Aboutpage';
+import Skillspage from './templates/Skillspage';
+import FeaturedProjectpage from './templates/FeaturedProjectpage';
+import Projectspage from './templates/Projectspage';
 
 const anchors = ["Home", "About", "Skills", "Featured Project", "Projects", "Github", "Feedbacks"];
 
@@ -25,13 +27,13 @@ const Fullpage = () => {
               <Aboutpage />
             </div>
             <div className="section">
-              Skills
+              <Skillspage />
             </div>
             <div className="section">
-              Featured Project
+              <FeaturedProjectpage />
             </div>
             <div className="section">
-              Other Projects
+              <Projectspage />
             </div>
             <div className="section">
               Github Feed

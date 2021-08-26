@@ -22,7 +22,7 @@ export const MyButtonContainer = styled.span`
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid var(--orange-title);
+    border: 3px solid var(--orange-title);
     box-sizing: border-box;
     border-radius: 5px;
   }
