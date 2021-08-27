@@ -23,9 +23,9 @@ export const SkillCardContainer = styled.div`
   }
   &:hover {
     transform: scale(1.2);
-    color: var(--orange-title);
+    color: var(--orange-default);
     path {
-      fill: var(--orange-title);
+      fill: var(--orange-default);
     }
   }
 `;

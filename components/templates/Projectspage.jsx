@@ -8,7 +8,6 @@ const Projectspage = () => {
     <SectionAltContainer>
       <PageTitles pageTitle1="PROJECTS" pageTitle2="My Projects" />
       <Projects />
-
     </SectionAltContainer>
   );
 };

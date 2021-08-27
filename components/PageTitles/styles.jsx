@@ -13,7 +13,7 @@ export const PageTitle2Container = styled.div`
 export const PageTitleH2 = styled.h2`
   font-size: 1rem;
 	font-weight: 900;
-  color: var(--orange-title);
+  color: var(--orange-default);
   text-shadow: 2px 2px 5px var(--black);
 `;
 
@@ -28,6 +28,6 @@ export const PageTitleH1 = styled.h1`
 export const HrTitleLine = styled.hr`
 	margin-right: 15px;
   width: 75px;
-  border: 1px solid var(--orange-title);
+  border: 1px solid var(--orange-default);
 	box-shadow: 2px 2px 10px var(--black);
 `;

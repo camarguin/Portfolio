@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const FooterContainer = styled.footer`
-  /* background-color: red; */
   padding: 5px;
   p {
     font-size: 1.1rem;

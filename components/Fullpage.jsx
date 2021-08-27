@@ -5,6 +5,8 @@ import Aboutpage from './templates/Aboutpage';
 import Skillspage from './templates/Skillspage';
 import FeaturedProjectpage from './templates/FeaturedProjectpage';
 import Projectspage from './templates/Projectspage';
+import Feedbackpage from './templates/Feedbackpage';
+import GithubFeedpage from './templates/GithubFeedpage';
 
 const anchors = ["Home", "About", "Skills", "Featured Project", "Projects", "Github", "Feedbacks"];
 
@@ -36,10 +38,10 @@ const Fullpage = () => {
               <Projectspage />
             </div>
             <div className="section">
-              Github Feed
+              <GithubFeedpage />
             </div>
             <div className="section">
-              People Feedbacks
+              <Feedbackpage />
             </div>
           </ReactFullpage.Wrapper>
         );

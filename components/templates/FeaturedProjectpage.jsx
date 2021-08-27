@@ -1,10 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
-import PageTitles from '../PageTitles/PageTitles';
-import { ImageContainer, LeftContainer, PageContent, RightContainer, SectionContainer, IconsContainer, ButtonsContainer } from './styles';
 import { SiNextDotJs, SiMaterialUi, SiFigma } from 'react-icons/si';
-import dpcodeImg from '../../public/assets/dpcodeAcademy.png';
+import PageTitles from '../PageTitles/PageTitles';
 import MyButton from '../Button/MyButton';
+import { ImageContainer, LeftContainer, PageContent, RightContainer, SectionContainer, IconsContainer, ButtonsContainer } from './styles';
+import dpcodeImg from '../../public/assets/dpcodeAcademy.png';
 
 const FeaturedProjectpage = () => {
   return (

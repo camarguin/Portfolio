@@ -22,16 +22,16 @@ export const MyButtonContainer = styled.span`
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 3px solid var(--orange-title);
+    border: 3px solid var(--orange-default);
     box-sizing: border-box;
     border-radius: 5px;
   }
   a:before {
-    color: var(--orange-title);
+    color: var(--orange-default);
     transform: rotateY(0deg) translateZ(25px);
   }
   a:after{
-    background-color: var(--orange-title);
+    background-color: var(--orange-default);
     color: var(--white);
     transform: rotateX(90deg) translateZ(25px);
   }

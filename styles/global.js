@@ -2,18 +2,10 @@ import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
   :root {
-    --orange-title: #E27D60;
+    --orange-default: #E27D60;
     --orange-dark: #44251d;
     --white: #ffffff;
     --black: #000000;
-    /*
-    --green-dark: #164A41;
-    --green-medium: #4D774E;
-    --green-light: #9DC88D;
-    --gray-label: #8E9AAF;
-    --gray-input: #EFEBEB;
-    --white: #fff;
-    --dark-text: #252422; */
   }
   
   * {

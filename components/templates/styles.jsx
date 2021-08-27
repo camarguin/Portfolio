@@ -48,7 +48,7 @@ export const H2 = styled.h2`
   font-size: 1.5rem;
   letter-spacing: 1px;
   font-weight: 700;
-  color: var(--orange-title);
+  color: var(--orange-default);
   text-shadow: 2px 2px 2px var(--black);
   padding: 10px 0px;
 `;
@@ -89,6 +89,6 @@ export const IconsContainer = styled.div`
     transition: all .2s;
   }
   & *:hover {
-    color: var(--orange-title);
+    color: var(--orange-default);
   }
 `;

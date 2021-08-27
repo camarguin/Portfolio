@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const CardContainer = styled.figure`
-  color: #fff;
+  color: var(--white);
   position: relative;
   overflow: hidden;
   margin: 10px auto;
@@ -32,7 +32,7 @@ export const CardContainer = styled.figure`
     top: 0;
     bottom: 0;
     position: absolute;
-    color: #ffffff;
+    color: var(--white);
   }
   &:hover img,
   &:hover img {
@@ -77,7 +77,7 @@ export const CardTextH3 = styled.h3`
   width: 100%;
   font-weight: 400;
   text-transform: uppercase;
-  background: var(--orange-title);
+  background: var(--orange-default);
   -webkit-transform: translate3d(0%, 0%, 0);
   transform: translate3d(0%, 0%, 0);
 `;
@@ -92,7 +92,7 @@ export const CardTextSpan = styled.span`
   font-weight: 400;
   text-transform: uppercase;
   background: var(--white);
-  color: var(--orange-title);
+  color: var(--orange-default);
   position: relative;
   bottom: 0;
   left: 50px;

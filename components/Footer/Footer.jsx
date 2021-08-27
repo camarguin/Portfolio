@@ -1,6 +1,6 @@
 import React from 'react';
-import { FooterContainer } from './styles';
 import { FaHeartbeat } from 'react-icons/fa'
+import { FooterContainer } from './styles';
 
 const Footer = () => {
   return (

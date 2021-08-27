@@ -1,8 +1,8 @@
 import React from 'react';
 import { SiHtml5, SiCss3, SiSass, SiJavascript, SiReact, SiTypescript, SiFigma, SiNextDotJs, SiFirebase, SiMaterialUi, SiGithub } from 'react-icons/si';
-import ChakraIcon from '../../public/assets/ChakraIcon';
 import SkillCard from './SkillCard';
 import { SkillsGridContainer } from './styles';
+import ChakraIcon from '../../public/assets/ChakraIcon';
 
 const Skills = () => {
   return (

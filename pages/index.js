@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react'
-import Image from 'next/image'
+import React from 'react'
 import Fullpage from '../components/Fullpage'
 import { HomepageContainer } from '../styles/home'
 

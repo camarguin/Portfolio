@@ -2,9 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 import { AiOutlineArrowDown } from 'react-icons/ai'
 import FloatingComponent from 'react-floating-component';
-import homeIllustrationImg from '../../public/assets/homeIllustration.png';
 import { SectionContainer, LeftContainer, RightContainer, H1, H2 } from './styles';
-import MouseScroll from '../MouseScroll/MouseScroll';
+import homeIllustrationImg from '../../public/assets/homeIllustration.png';
 import htmlIcon from '../../public/assets/htmlIcon.png';
 import cssIcon from '../../public/assets/cssIcon.png';
 import jsIcon from '../../public/assets/jsIcon.png';
@@ -34,7 +33,6 @@ const Homepage = () => {
         </div>
         <Image src={homeIllustrationImg} alt="illustration" width="400px" height="400px" />
       </RightContainer>
-      {/* <MouseScroll /> */}
     </SectionContainer>
   );
 };
