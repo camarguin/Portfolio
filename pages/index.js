@@ -1,12 +1,14 @@
-import React from 'react'
-import Fullpage from '../components/Fullpage'
-import { HomepageContainer } from '../styles/home'
+import React from 'react';
+import Fullpage from '../components/Fullpage';
+import Footer from '../components/Footer/Footer';
+import { HomepageContainer } from '../styles/home';
 
 export default function Home({ repositories }) {
   console.log(repositories)
   return (
     <HomepageContainer>
       <Fullpage />
+      <Footer />
     </HomepageContainer>
   )
 }

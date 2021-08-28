@@ -106,7 +106,6 @@ export const ProjectsContainer = styled.div`
   .carousel {
     padding: 0px 0px;
     margin: 0 auto;
-    align-self: center;
   }
   .carousel:nth-child(1) {
     margin: 0 auto;

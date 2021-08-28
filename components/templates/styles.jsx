@@ -36,6 +36,11 @@ export const RightContainer = styled.div`
   }
 `;
 
+export const IllustrationImageContainer = styled.div`
+  width: 30vw;
+  max-width: 600px;
+`;
+
 export const H1 = styled.h1`
   font-size: 3rem;
   letter-spacing: 1px;
