@@ -8,7 +8,7 @@ import Projectspage from './templates/Projectspage';
 import Feedbackpage from './templates/Feedbackpage';
 import GithubFeedpage from './templates/GithubFeedpage';
 
-const anchors = ["Home", "About", "Skills", "Featured Project", "Projects", "Github", "Feedbacks"];
+const anchors = ["Home", "About", "Skills", "Featured Project", "Projects", "Feedbacks"];
 
 const Fullpage = () => {
   return (
@@ -37,9 +37,9 @@ const Fullpage = () => {
             <div className="section">
               <Projectspage />
             </div>
-            <div className="section">
+            {/* <div className="section">
               <GithubFeedpage />
-            </div>
+            </div> */}
             <div className="section">
               <Feedbackpage />
             </div>

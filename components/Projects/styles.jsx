@@ -1,104 +1,97 @@
 import styled from "styled-components";
 
-export const CardContainer = styled.figure`
-  color: var(--white);
-  position: relative;
-  overflow: hidden;
-  margin: 10px auto;
-  min-width: 220px;
-  max-width: 350px; //change on responsive
-  max-height: 197px; //change on responsive
+export const CardOverlayBackground = styled.div`
+  position: absolute;
+  transition: 0.5s;
+  left: 0;
+  top: 0;
   width: 100%;
-  background: var(--orange-dark);
-  text-align: center;
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  & * {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
+  height: 100%;
+  background-color: #000;
+  background-image: linear-gradient(315deg, #000000 0%, #000000 100%);
+  opacity: 0;
+`;
+
+export const CardTechIcons = styled.h1`
+  transform: translateY(0px);
+  margin: 0 auto;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 160px;
+  font-size: 2rem;
+  opacity: 0;
+  * {
+    margin-right: 5px;
+    transition: ease-in-out 0.1s;
   }
-  img {
-    opacity: 1;
-    width: 100%;
-    -webkit-transition: all 0.6s;
-    transition: all 0.6s;
-    margin: 0 auto;
-  }
-  a {
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    position: absolute;
-    color: var(--white);
-  }
-  &:hover img,
-  &:hover img {
-    opacity: 0.35;
-    -webkit-filter: blur(5px);
-    filter: blur(5px);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
-  &:hover figcaption span,
-  &.hover figcaption span {
-    -webkit-transform: translate3d(0%, 0%, 0);
-    transform: translate3d(0%, 0%, 0);
-  }
-  &:hover figcaption h3,
-  &.hover figcaption h3 {
-    -webkit-transform: translate3d(0%, -100%, 0);
-    transform: translate3d(0%, -100%, 0);
+  *:hover {
+    color: var(--orange-default);
   }
 `;
 
-export const CardTextContainer = styled.figcaption`
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  left: 0%;
-  /* left: 18%; */
-  right: 18%;
-  height: 100%;
-  & > div {
-    overflow: hidden;
-    width: 100%;
-    position: relative;
-    height: 78%;
-  }
+export const CardTextContainer = styled.div`
 `;
 
 export const CardTextH3 = styled.h3`
-  margin: 0;
-  padding: 10px 15px;
-  display: inline-block;
-  width: 100%;
-  font-weight: 400;
-  text-transform: uppercase;
-  background: var(--orange-default);
-  -webkit-transform: translate3d(0%, 0%, 0);
-  transform: translate3d(0%, 0%, 0);
+  transform: translateY(0px);
+  transition: 0.5s;
+  text-align: center;
+  opacity: 0;
+  font-weight: 900;
+  font-size: 1.4rem;
 `;
 
-export const CardTextSpan = styled.span`
-  margin: 0;
-  padding: 10px 15px;
-  display: block;
-  /* display: inline-block; */
-  width: 70%;
-  /* width: 100%; */
-  font-weight: 400;
-  text-transform: uppercase;
-  background: var(--white);
-  color: var(--orange-default);
+export const CardTextA = styled.button`
+  display: inline-block;
+	padding: 10px 20px;
+  width: 140px;
+	color: var(--white);
+	border: 1px solid var(--orange-default);
+	font-size: 12px;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: .5s;
+  opacity: 0;
+  &:hover {
+    background-color: var(--orange-default);
+  }
+`;
+
+export const CardContainer = styled.div`
+  background: ${props => `url(${props.backgroundImg}) no-repeat top center`};
   position: relative;
-  bottom: 0;
-  left: 50px;
-  position: absolute;
-  -webkit-transform: translate3d(0%, 100%, 0);
-  transform: translate3d(0%, 100%, 0);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 10px;
+  width: 350px;
+  height: 200px;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  transition: 0.4s ease-out;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: #fff;
+  &:hover ${CardOverlayBackground} {
+    opacity: 0.8;
+  }
+  &:hover ${CardTechIcons} {
+    opacity: 1;
+    transform: translateY(-55px);
+  }
+  &:hover ${CardTextH3} {
+    opacity: 1;
+    transform: translateY(5px);
+  }
+  &:hover ${CardTextA} {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
 `;
 
 export const ProjectsContainer = styled.div`

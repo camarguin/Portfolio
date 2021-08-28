@@ -1,14 +1,15 @@
 import React from 'react';
 import Carousel from 'react-grid-carousel'
+import { SiNextDotJs, SiFirebase, SiMaterialUi, SiStyledComponents, SiHtml5, SiCss3, SiJavascript, SiReact, SiTypescript } from 'react-icons/si';
 import ProjectCard from './ProjectCard';
 import { ProjectsContainer } from './styles';
-import advocaciaGerhardtImg from '../../public/assets/advocaciaGerhardt.png';
-import dtmoneyImg from '../../public/assets/dtmoney.png';
-import perfilagroImg from '../../public/assets/perfilagro.png';
-import pizzaShopImg from '../../public/assets/pizzashop.png';
-import hoysImg from '../../public/assets/hoys.png';
-import proCaliberImg from '../../public/assets/proCaliberLacrosse.png';
-import wvccImg from '../../public/assets/wvcc.png';
+// import advocaciaGerhardtImg from '../../public/assets/advocaciaGerhardt.png';
+// import dtmoneyImg from '../../public/assets/dtmoney.png';
+// import perfilagroImg from '../../public/assets/perfilagro.png';
+// import pizzaShopImg from '../../public/assets/pizzashop.png';
+// import hoysImg from '../../public/assets/hoys.png';
+// import proCaliberImg from '../../public/assets/proCaliberLacrosse.png';
+// import wvccImg from '../../public/assets/wvcc.png';
 
 const Projects = () => {
   return (
@@ -24,31 +25,33 @@ const Projects = () => {
         scrollSnap
       >
         <Carousel.Item>
-          <ProjectCard projectImg={perfilagroImg} projectName="Perfilagro" projectAlt="Perfilagro" />
+          <ProjectCard projectImg={'./assets/perfilagro.png'} projectName="Perfilagro"
+            projectTechs={<><SiNextDotJs /><SiFirebase /><SiMaterialUi /><SiStyledComponents /></>} />
         </Carousel.Item>
         <Carousel.Item>
-          <ProjectCard projectImg={advocaciaGerhardtImg} projectName="Gerhardt's Lawyer" projectAlt="Advocacia Gerhardt" />
+          <ProjectCard projectImg={'./assets/advocaciaGerhardt.png'} projectName="Gerhardt's Lawyer"
+            projectTechs={<><SiHtml5 /><SiCss3 /><SiJavascript /></>} />
         </Carousel.Item>
         <Carousel.Item>
-          <ProjectCard projectImg={pizzaShopImg} projectName="Pizza Shop" projectAlt="Pizzashop" />
+          <ProjectCard projectImg={'./assets/pizzashop.png'} projectName="Pizza Shop"
+            projectTechs={<><SiReact /><SiCss3 /></>} />
         </Carousel.Item>
         <Carousel.Item>
-          <ProjectCard projectImg={dtmoneyImg} projectName="Dtmoney" projectAlt="Dtmoney" />
+          <ProjectCard projectImg={'./assets/dtmoney.png'} projectName="Dtmoney"
+            projectTechs={<><SiReact /><SiTypescript /><SiStyledComponents /></>}
+          />
         </Carousel.Item>
         <Carousel.Item>
-          <ProjectCard projectImg={hoysImg} projectName="Hoys" projectAlt="Hoys" />
+          <ProjectCard projectImg={'./assets/hoys.png'} projectName="Hoys"
+            projectTechs={<><SiNextDotJs /><SiStyledComponents /></>} />
         </Carousel.Item>
         <Carousel.Item>
-          <ProjectCard projectImg={proCaliberImg} projectName="Pro Caliber Lacrosse" projectAlt="Pro Caliber Lacrosse" />
+          <ProjectCard projectImg={'./assets/proCaliberLacrosse.png'} projectName="Pro Caliber Lacrosse"
+            projectTechs={<><SiHtml5 /><SiCss3 /><SiJavascript /></>} />
         </Carousel.Item>
         <Carousel.Item>
-          <ProjectCard projectImg={wvccImg} projectName="West Vancouver Cricket Club" projectAlt="West Vancouver Cricket Club" />
-        </Carousel.Item>
-        <Carousel.Item>
-          <ProjectCard projectImg={pizzaShopImg} projectName="Pizza Shop" projectAlt="Pizzashop" />
-        </Carousel.Item>
-        <Carousel.Item>
-          <ProjectCard projectImg={pizzaShopImg} projectName="Pizza Shop" projectAlt="Pizzashop" />
+          <ProjectCard projectImg={'./assets/wvcc.png'} projectName="WVCC"
+            projectTechs={<><SiHtml5 /><SiCss3 /><SiJavascript /></>} />
         </Carousel.Item>
       </Carousel>
     </ProjectsContainer>
