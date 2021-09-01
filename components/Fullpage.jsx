@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
+import { useMediaQuery } from 'react-responsive';
 import Homepage from './templates/Homepage';
 import Aboutpage from './templates/Aboutpage';
 import Skillspage from './templates/Skillspage';
@@ -11,10 +12,13 @@ import GithubFeedpage from './templates/GithubFeedpage';
 const anchors = ["Home", "About", "Skills", "Featured Project", "Projects", "Feedbacks"];
 
 const Fullpage = () => {
+  const isMobile = useMediaQuery({
+    query: '(max-width: 600px)'
+  })
   return (
     <ReactFullpage
       // licenseKey={'YOUR_KEY_HERE'}
-      navigation
+      navigation={isMobile ? false : true}
       navigationPosition={"left"}
       navigationTooltips={anchors}
       scrollingSpeed={1500}

@@ -38,4 +38,23 @@ export const MyButtonContainer = styled.span`
   a:hover {
     transform: translateZ(-25px) rotateX(-90deg);
   }
+  @media screen and (max-width: 500px) {
+    width: 160px;
+    a:before, a:after {
+      width: 160px;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    width: 140px;
+    a:before, a:after {
+      width: 140px;
+    }
+  }
+  @media screen and (max-width: 350px) {
+    width: 120px;
+    a:before, a:after {
+      width: 120px;
+      border: 5px solid var(--orange-default);
+    }
+  }
 `;

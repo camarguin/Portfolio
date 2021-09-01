@@ -1,24 +1,23 @@
 import React from 'react';
-import Carousel from 'react-grid-carousel'
+import Slider from "react-slick";
 import FeedbackCard from './FeedbackCard';
 import { FeedbacksContainer } from './styles';
 
 const Feedbacks = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    cssEase: "linear",
+  }
   return (
     <FeedbacksContainer>
-      <Carousel
-        autoplay={6000}
-        cols={1}
-        rows={1}
-        containerClassName="carousel"
-        dotColorActive="#fff"
-        dotColorInactive="#808080"
-        loop
-        hideArrow
-        showDots
-        scrollSnap
-      >
-        <Carousel.Item>
+      <Slider {...settings}>
+        <div>
           <FeedbackCard
             feedbackText="I have known him for the whole year as a tech-head instructor. He worked as a scrum master a few times because
             he has a great leadership. He took care of website optimization, modification, and other maintenance for his
@@ -26,8 +25,8 @@ const Feedbacks = () => {
             feedbackAuthor="Steve Kim"
             feedbackAuthor2="President of Synet Computer Inc."
           />
-        </Carousel.Item>
-        <Carousel.Item>
+        </div>
+        <div>
           <FeedbackCard
             feedbackText="Over two months, I had many requests and continuously changed my vision as the
             website started to come together. Lucas was patient with me,
@@ -36,9 +35,9 @@ const Feedbacks = () => {
             feedbackAuthor="Tyler Pace"
             feedbackAuthor2="Founder and CEO of Pro Caliber Lacrosse"
           />
-        </Carousel.Item>
-      </Carousel>
-    </FeedbacksContainer>
+        </div>
+      </Slider>
+    </FeedbacksContainer >
   );
 };
 

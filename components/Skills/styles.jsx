@@ -6,6 +6,19 @@ export const SkillsGridContainer = styled.div`
   grid-template-rows: 1fr; 
   gap: 0px 0px;
   padding: 10px 0px;
+  @media screen and (max-width: 800px) {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px 0px;
+  }
+  @media screen and (max-width: 600px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media screen and (max-width: 325px) {
+    padding: 10px 0px;
+    grid-template-columns: repeat(3,1fr);
+    /* background-color: red; */
+  }
+
 `;
 
 export const SkillCardContainer = styled.div`
@@ -28,6 +41,25 @@ export const SkillCardContainer = styled.div`
       fill: var(--orange-default);
     }
   }
+  @media screen and (max-width: 800px) {
+    margin: 0 auto;
+  }
+  @media screen and (max-width: 600px) {
+    width: 100px;
+    height: auto;
+    padding: 10px 0px;
+    svg {
+      width: 35px;
+      height: 35px;
+    }
+  }
+  @media screen and (max-width: 325px) {
+    width: 85px;
+    height: fit-content;
+    &:hover {
+      transform: none;
+    }
+  }
 `;
 
 export const SkillCardIcon = styled.h1`
@@ -39,4 +71,11 @@ export const SkillCardText = styled.h2`
   font-size: 1.5rem;
   font-weight: 400;
   letter-spacing: 2px;
+  @media screen and (max-width: 600px) {
+    font-size: 1.1rem;
+  }
+  @media screen and (max-width: 325px) {
+    letter-spacing: 1px;
+    font-size: 1rem;
+  }
 `;

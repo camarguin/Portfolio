@@ -26,7 +26,7 @@ const FeaturedProjectpage = () => {
       </LeftContainer>
       <RightContainer>
         <ImageContainer>
-          <Image src={dpcodeImg} alt="DPCode Academy" />
+          <Image src={dpcodeImg} alt="DPCode Academy" priority={true} />
         </ImageContainer>
       </RightContainer>
     </SectionContainer>
