@@ -32,7 +32,7 @@ const Homepage = () => {
               <Image className="code" src={codeIcon} alt="illustration" width="48.434" height="69.2" />
             </FloatingComponent>
           </div>
-          <Image src={homeIllustrationImg} alt="illustration" />
+          <Image src={homeIllustrationImg} alt="illustration" priority={true} />
         </IllustrationImageContainer>
       </RightContainer>
     </SectionContainer>

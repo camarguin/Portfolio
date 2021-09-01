@@ -14,7 +14,7 @@ const Feedbackpage = () => {
       </LeftContainer>
       <RightContainer>
         <IllustrationImageContainer>
-          <Image src={feedbackIllustrationImg} alt="Feedback Illustration" />
+          <Image src={feedbackIllustrationImg} alt="Feedback Illustration" priority={true} />
         </IllustrationImageContainer>
       </RightContainer>
     </SectionContainer>
