@@ -1,11 +1,11 @@
 import React from 'react';
-import { FaHeartbeat } from 'react-icons/fa'
+import { BiHappyBeaming } from 'react-icons/bi'
 import { FooterContainer } from './styles';
 
 const Footer = () => {
   return (
     <FooterContainer>
-      <p>Developed and Designed with &nbsp; <FaHeartbeat /> &nbsp; by Lucas</p>
+      <p>Designed and developed by Lucas &nbsp; <BiHappyBeaming /></p>
     </FooterContainer>
   );
 };

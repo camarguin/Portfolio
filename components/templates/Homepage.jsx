@@ -2,17 +2,21 @@ import React from 'react';
 import Image from 'next/image';
 import { AiOutlineArrowDown } from 'react-icons/ai'
 import FloatingComponent from 'react-floating-component';
-import { SectionContainer, LeftContainer, RightContainer, H1, H2, IllustrationImageContainer } from './styles';
+import { SectionContainer, LeftContainer, RightContainer, H1, H2, IllustrationImageContainer, LogoContainer } from './styles';
 import homeIllustrationImg from '../../public/assets/homeIllustration.png';
 import htmlIcon from '../../public/assets/htmlIcon.png';
 import cssIcon from '../../public/assets/cssIcon.png';
 import jsIcon from '../../public/assets/jsIcon.png';
 import codeIcon from '../../public/assets/codeIcon.png';
+import LogoImg from '../../public/assets/Logo.png';
 
 const Homepage = () => {
   return (
     <SectionContainer >
       <LeftContainer>
+        <LogoContainer>
+          <Image src={LogoImg} />
+        </LogoContainer>
         <H1>Feel the power of a well crafted website</H1>
         <H2><AiOutlineArrowDown />&nbsp;Meet Lucas</H2>
       </LeftContainer>

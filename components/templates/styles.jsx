@@ -186,3 +186,16 @@ export const IconsContainer = styled.div`
     color: var(--orange-default);
   }
 `;
+
+export const LogoContainer = styled.div`
+  position: absolute;
+  top: 20px;
+  img {
+    width: 80px;
+  }
+  @media screen and (max-width: 500px) {
+    img {
+      width: 50px;
+    }
+  }
+`;

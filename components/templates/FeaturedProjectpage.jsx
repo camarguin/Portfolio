@@ -21,7 +21,7 @@ const FeaturedProjectpage = () => {
           <SiFigma />
         </IconsContainer>
         <ButtonsContainer>
-          <MyButton btnLabel="Check it out" />
+          <MyButton btnLabel="Check it out" btnHref="https://dpcode.academy" />
         </ButtonsContainer>
       </LeftContainer>
       <RightContainer>
