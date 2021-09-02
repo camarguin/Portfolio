@@ -17,7 +17,7 @@ const Fullpage = () => {
   })
   return (
     <ReactFullpage
-      // licenseKey={'YOUR_KEY_HERE'}
+      licenseKey={process.env.FULLPAGE_APP_LICENSE}
       navigation={isMobile ? false : true}
       navigationPosition={"left"}
       navigationTooltips={anchors}
