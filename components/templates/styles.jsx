@@ -185,6 +185,10 @@ export const IconsContainer = styled.div`
   & *:hover {
     color: var(--orange-default);
   }
+  @media screen and (max-width:350px) {
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+  }
 `;
 
 export const LogoContainer = styled.div`
