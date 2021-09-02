@@ -4,7 +4,7 @@ import { MyButtonContainer } from './styles';
 const MyButton = ({ btnLabel, btnHref }) => {
   return (
     <MyButtonContainer content={btnLabel}>
-      <a href={btnHref} target="_blank"></a>
+      <a href={btnHref} target="_blank" rel="noopener noreferrer"></a>
     </MyButtonContainer>
   );
 };

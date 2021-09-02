@@ -20,10 +20,10 @@ const Aboutpage = () => {
           <a href="">
             <SiInstagram />
           </a>
-          <a href="https://github.com/camarguin" target="_blank">
+          <a href="https://github.com/camarguin" target="_blank" rel="noopener noreferrer">
             <SiGithub />
           </a>
-          <a href="https://www.linkedin.com/in/lucasgerhardt/" target="_blank">
+          <a href="https://www.linkedin.com/in/lucasgerhardt/" target="_blank" rel="noopener noreferrer">
             <SiLinkedin />
           </a>
         </IconsContainer>
