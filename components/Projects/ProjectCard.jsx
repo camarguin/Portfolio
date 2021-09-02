@@ -29,7 +29,7 @@ const ProjectCard = ({ projectImg, projectName, projectWebsite, projectTechs }) 
           <ModalHeader>{projectName}</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            Test
+            Coming soon! 
           </ModalBody>
           <ModalFooter>
             <Button as="a" href={projectWebsite} _hover={{ cursor: 'pointer', backgroundColor: "#FFBE93" }} target="_blank" variant="solid" background="#E27D60" color="white">
