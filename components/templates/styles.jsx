@@ -128,6 +128,10 @@ export const PageContent = styled.p`
   @media screen and (max-width: 500px) {
     padding: 10px 0px;
   }
+  @media screen and (max-width: 350px) {
+    line-height: 140%;
+    padding: 5px 0px;
+  }
 `;
 
 export const ImageContainer = styled.div`
@@ -136,6 +140,9 @@ export const ImageContainer = styled.div`
   max-height: fit-content;
   display: flex;
   justify-content: right;
+  img {
+    border-radius: 10px;
+  }
   @media screen and (max-width: 1120px) {
     max-width: 90%;
     height: fit-content;
@@ -147,6 +154,12 @@ export const ImageContainer = styled.div`
   }
   @media screen and (max-width: 500px) {
     padding-bottom: 30px;
+  }
+  @media screen and (max-width: 450px) {
+    width: 100%;
+  }
+  @media screen and (max-width: 350px) {
+    padding-bottom: 5px;
   }
 `;
 

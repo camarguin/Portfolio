@@ -16,9 +16,9 @@ export const FooterContainer = styled.footer`
     color: var(--white);
   }
   @media screen and (max-width: 320px) {
-    padding: 5px 0px;
+    padding: 0px 0px;
     p {
-      font-size: 0.8rem;
+      font-size: 0.7rem;
     }
   }
 `;

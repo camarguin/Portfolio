@@ -1,12 +1,17 @@
 import React from 'react';
 import Image from 'next/image';
+import { useMediaQuery } from 'react-responsive'
 import { SiInstagram, SiGithub, SiLinkedin } from 'react-icons/si';
 import MyButton from '../Button/MyButton';
 import PageTitles from '../PageTitles/PageTitles';
 import { SectionContainer, LeftContainer, RightContainer, PageContent, ImageContainer, ButtonsContainer, IconsContainer } from './styles';
 import aboutPicture from '../../public/assets/aboutPicture.jpg';
+import aboutPictureMobile from '../../public/assets/aboutPictureMobile.png';
 
 const Aboutpage = () => {
+  const isMobile = useMediaQuery({
+    query: '(max-width: 450px)'
+  })
   return (
     <SectionContainer>
       <LeftContainer>
@@ -34,6 +39,10 @@ const Aboutpage = () => {
       </LeftContainer>
       <RightContainer>
         <ImageContainer>
+          {/* {isMobile
+            ? <Image src={aboutPictureMobile} alt="Lucas" priority={true} />
+            : <Image src={aboutPicture} alt="Lucas" priority={true} />
+          } */}
           <Image src={aboutPicture} alt="Lucas" priority={true} />
         </ImageContainer>
       </RightContainer>

@@ -10,10 +10,13 @@ const FeaturedProjectpage = () => {
   return (
     <SectionContainer>
       <LeftContainer>
-        <PageTitles pageTitle1="FEATURED PROJECT" pageTitle2="DPCode Academy" />
+        <PageTitles pageTitle1="FEATURED PROJECT" pageTitle2="DPCODE Academy" />
         <PageContent>
-          This is my featured project I worked on recently. The project was made by a team of backend, frontend and UX/UI designer
-          A web app created for DPCode Academy to provide the best experience for its students.
+          Webpage made for DPCode Academy that provides its students the best
+          experience to access courses that are aimed at technologies.
+          The project was developed by a team of developers, and UX/UI designers.
+          I have learned how to deal with new challenges as a group,
+          I was able to work with API on Nextjs and share pieces of knowledge with the team
         </PageContent>
         <IconsContainer>
           <SiNextDotJs />
