@@ -34,6 +34,10 @@ export const CardTechIcons = styled.h1`
 export const CardTextContainer = styled.div`
 `;
 
+export const ModalPContainer = styled.p`
+  text-align: justify;
+`;
+
 export const CardTextH3 = styled.h3`
   transform: translateY(0px);
   transition: 0.5s;

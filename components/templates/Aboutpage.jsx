@@ -39,10 +39,6 @@ const Aboutpage = () => {
       </LeftContainer>
       <RightContainer>
         <ImageContainer>
-          {/* {isMobile
-            ? <Image src={aboutPictureMobile} alt="Lucas" priority={true} />
-            : <Image src={aboutPicture} alt="Lucas" priority={true} />
-          } */}
           <Image src={aboutPicture} alt="Lucas" priority={true} />
         </ImageContainer>
       </RightContainer>
