@@ -22,7 +22,7 @@ const Aboutpage = () => {
           If you have interest in working with me please feel free to contact me.
         </PageContent>
         <IconsContainer>
-          <a href="">
+          <a href="https://www.instagram.com/lucasgcoder/" target="_blank" rel="noopener noreferrer">
             <SiInstagram />
           </a>
           <a href="https://github.com/camarguin" target="_blank" rel="noopener noreferrer">
