@@ -31,7 +31,7 @@ const Projects = () => {
     <ProjectsContainer>
       <Slider {...settings}>
         <div>
-          <ProjectCard projectImg={'./assets/reporEmbalagens.png'} projectName="ReporEmbalagens"
+          <ProjectCard projectImg={'./assets/reporembalagens.png'} projectName="ReporEmbalagens"
             projectWebsite="https://reporembalagens.com.br"
             projectTechs={<><SiNextDotJs /><SiMongodb /></>}
             projectDescription="Website built for Reporembalagens to help reach customer online. 
