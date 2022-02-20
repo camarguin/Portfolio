@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { SiNextDotJs, SiFirebase, SiMaterialUi, SiStyledComponents, SiHtml5, SiCss3, SiJavascript, SiReact, SiTypescript } from 'react-icons/si';
+import { SiNextDotJs, SiFirebase, SiMaterialUi, SiStyledComponents, SiHtml5, SiCss3, SiJavascript, SiReact, SiTypescript, SiMongodb } from 'react-icons/si';
 import Slider from "react-slick";
 import ProjectCard from './ProjectCard';
 import { ProjectsContainer } from './styles';
@@ -30,6 +30,22 @@ const Projects = () => {
   return (
     <ProjectsContainer>
       <Slider {...settings}>
+        <div>
+          <ProjectCard projectImg={'./assets/reporEmbalagens.png'} projectName="ReporEmbalagens"
+            projectWebsite="https://reporembalagens.com.br"
+            projectTechs={<><SiNextDotJs /><SiMongodb /></>}
+            projectDescription="Website built for Reporembalagens to help reach customer online. 
+            The company has a on-site business where they sell packaging items. The website was made for 
+            customers to see and order items online through their accounts. The website has also an admin 
+            page where they can add more products, see the users and orders. With constant improvements in the website
+            they noticed the increase of their customers, especially because of easy access to it during the covid-19 pandemic.
+            I designed and developed the website using Figma for design and nextjs with mongodb and Chakra-ui where I could
+            learn how to handle complex coding while using a database and authentication with next-auth. I am proud of my work
+            and I hope I can improve this website more and more while learning.
+            "
+            projectDescriptionTechs="Nextjs, MongoDB, Chakra-ui, Next-auth"
+          />
+        </div>
         <div>
           <ProjectCard projectImg={'./assets/perfilagro.png'} projectName="Perfilagro"
             projectWebsite="https://www.perfilagro.com.br"

@@ -1,5 +1,5 @@
 import React from 'react';
-import { SiHtml5, SiCss3, SiSass, SiJavascript, SiReact, SiTypescript, SiFigma, SiNextDotJs, SiFirebase, SiMaterialUi, SiGithub } from 'react-icons/si';
+import { SiHtml5, SiCss3, SiSass, SiJavascript, SiReact, SiTypescript, SiFigma, SiNextDotJs, SiFirebase, SiMaterialUi, SiGithub, SiMongodb } from 'react-icons/si';
 import SkillCard from './SkillCard';
 import { SkillsGridContainer } from './styles';
 import ChakraIcon from '../../public/assets/ChakraIcon';
@@ -16,6 +16,7 @@ const Skills = () => {
       <SkillCard skillName="Nextjs" skillIcon={<SiNextDotJs />} />
       <SkillCard skillName="Figma" skillIcon={<SiFigma />} />
       <SkillCard skillName="Firebase" skillIcon={<SiFirebase />} />
+      <SkillCard skillName="MongoDB" skillIcon={<SiMongodb />} />
       <SkillCard skillName="Github" skillIcon={<SiGithub />} />
       <SkillCard skillName="Chakra-ui" skillIcon={<ChakraIcon />} />
       <SkillCard skillName="Material-ui" skillIcon={<SiMaterialUi />} />

@@ -17,6 +17,16 @@ const Feedbacks = () => {
       <Slider {...settings}>
         <div>
           <FeedbackCard
+            feedbackText="Lucas is an excellent professional, besides having a great didactic to teach programming
+            in which I had the opportunity to participate in the development of the Projete's website,
+            being a unique experience for me. I would recommend that companies get to know him as a person and as a professional,
+            I can say that you will have a lot to gain."
+            feedbackAuthor="Vinicius Tomaz "
+            feedbackAuthor2="Co-Founder of Projete Informatica "
+          />
+        </div>
+        <div>
+          <FeedbackCard
             feedbackText="I have known him for the whole year as a tech-head instructor. He worked as a scrum master a few times because
             he has a great leadership. He took care of website optimization, modification, and other maintenance for his
             group. His participation, punctuality, and enthusiasm fulfilled all the requirements any companies need..."
