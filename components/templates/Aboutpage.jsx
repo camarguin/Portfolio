@@ -33,7 +33,7 @@ const Aboutpage = () => {
           </a>
         </IconsContainer>
         <ButtonsContainer isDouble>
-          <MyButton btnLabel="Resume" btnHref="https://drive.google.com/file/d/1Lc-jFfsge2lk0TQP2B5K8UNZXYfbbhte/view?usp=sharing" />
+          <MyButton btnLabel="Resume" btnHref="https://drive.google.com/file/d/1PwtMmXsknRd0pQMcrJUMy5zRUG1kJjis/view?usp=sharing" />
           <MyButton btnLabel="Contact me" btnHref="mailto:lucasgcamargo@icloud.com" />
         </ButtonsContainer>
       </LeftContainer>
