@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { SiNextDotJs, SiFirebase, SiMaterialUi, SiStyledComponents, SiHtml5, SiCss3, SiJavascript, SiReact, SiTypescript, SiMongodb } from 'react-icons/si';
+import { SiNextDotJs, SiFirebase, SiMaterialUi, SiStyledComponents, SiHtml5, SiCss3, SiJavascript, SiReact, SiTypescript, SiMongodb, SiAuth0, SiPostgresql } from 'react-icons/si';
 import Slider from "react-slick";
 import ProjectCard from './ProjectCard';
 import { ProjectsContainer } from './styles';
@@ -30,6 +30,16 @@ const Projects = () => {
   return (
     <ProjectsContainer>
       <Slider {...settings}>
+        <div>
+          <ProjectCard projectImg={'./assets/MySquadProject.png'} projectName="MySquad"
+            // projectWebsite="https://lucasgc.ca"
+            projectTechs={<><SiNextDotJs /><SiReact /><SiMongodb /><SiAuth0 /><SiPostgresql /></>}
+            projectDescription="On going project being build by a startup called WEVGL. The project is based on hockey that utilizes a free and open source NHL api.
+            The idea is still in development using ReactJS, Reactive Native, Java Spring, PostgreSQL, MongoDB, OAuth, Figma all combined to provide a fun browser game app
+            "
+            projectDescriptionTechs="Nextjs, MongoDB, PostgreSQL, React Native, Chakra-ui, NativeBase, Java Spring, OAuth"
+          />
+        </div>
         <div>
           <ProjectCard projectImg={'./assets/reporembalagens.png'} projectName="ReporEmbalagens"
             projectWebsite="https://reporembalagens.com.br"
